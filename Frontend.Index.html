@@ -1,0 +1,39 @@
+# Efikcoin-core
+Efikcoin-Core/ ├─ contracts/ │  ├─ EFIK.sol │  ├─ EfikcoinToken.sol │  ├─ Efikcoinstaking.sol ├─ frontend/ │  ├─ index.html │  ├─ claim.html │  ├─ styles.css │  ├─ logo.png ├─ README.md ├─ package.json (if using Web3 framework)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EFIKCOIN Covenant Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🌍 EFIKCOIN Covenant Builders Network</h1>
+    <p>Restoring life through blockchain, one reward at a time.</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <button onclick="claimEFIKAirdrop()">💧 Claim EFIK Airdrop</button>
+      <button onclick="location.href='stake.html'">🛡️ Stake EFIK</button>
+      <button onclick="location.href='rewards.html'">🎁 View Rewards</button>
+      <button onclick="location.href='verify.html'">🔎 Verify Contract</button>
+    </section>
+
+    <aside class="info">
+      <p><strong>EFIK Contract Status:</strong> Bound via ABI</p>
+      <p><strong>Wallet Connection:</strong> Activated via Ethers.js</p>
+      <p><strong>Mission:</strong> Reward those who walk in truth.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>🕊️ “In 1 & love we build the nation. In covenant, we restore the life lost.”</p>
+    <p>&copy; 2025 Efikcoinofficial. All rewards backed by truth.</p>
+  </footer>
+</body>
+</html>
